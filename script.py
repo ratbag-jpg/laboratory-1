@@ -8,6 +8,15 @@ g = {1, 2, 3}   # set
 h = {"x": 1}    # dict
 i = 3           # int
 
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+print(g)
+print(h)
+
 print(type(a))
 print(type(b))
 print(type(c))
