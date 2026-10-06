@@ -10,24 +10,20 @@ cart = []
 format_price = lambda price: f"{price:.2f} грн"
 
 # Функція для показу каталогу
-def show_catalog():
-    print("\nКаталог:")
-    for name, info in products.items():
-        print(f"{name} - {format_price(info['price'])}")
-
-while True:
-    print("\n1 - Каталог")
-    print("2 - Додати в кошик")
-    print("3 - Видалити з кошика")
-    print("4 - Переглянути кошик")
-    print("5 - Купити товари")
-    print("6 - Адміністратор")
-    print("0 - Вихід")
+def main():
+    while true:
+        print("\n1 - Каталог")
+        print("2 - Додати в кошик")
+        print("3 - Видалити з кошика")
+        print("4 - Переглянути кошик")
+        print("5 - Купити товари")
+        print("6 - Адміністратор")
+        print("0 - Вихід")
 
     choice = input("Ваш вибір: ")
 
     if choice == "1":
-        show_catalog()
+        main()
 
     elif choice == "2":
         item = input("Назва товару: ")
@@ -87,3 +83,5 @@ while True:
 
     else:
         print("Невірний вибір.")
+if __name__ == "__main__":
+    main()
